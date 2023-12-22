@@ -1,0 +1,17 @@
+<div class="container" id="container">
+    <form [formGroup]= "FormularioLogin" (ngSubmit) = "onSubmit()">
+        <label for="email">Email: </label>
+        <input type="email" id="email" formControlName="email" autocomplete="additional-name" required><br>
+        <label for="password">Senha: </label>
+        <input type="password" id="password" formControlName="senha"><br><br>
+        <button id="recpassword">Recuperar senha?</button><br>
+        ,
+        <button (click)="obterDados()">Obter tudo</button><br>
+        <input type="submit" value="Login"/>
+    </form>
+
+    
+
+    <!-- <input type="text" [(ngModel)] = "nome"> 
+    {{nome}} -->
+</div>
